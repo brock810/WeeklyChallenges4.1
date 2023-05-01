@@ -70,10 +70,13 @@ namespace ChallengesWithTestsMark8
 
             for (int i = 0; i < numbers.Length; i++)
             {
-                evenSum += numbers[i];
+                if (numbers[i] % 2 == 0)
+                {
+                    evenSum += numbers[i];
+                }
 
             }
-            return sum;
+            return evenSum;
         }
 
 
